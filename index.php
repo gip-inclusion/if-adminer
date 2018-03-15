@@ -9,13 +9,13 @@ function adminer_object() {
     }
 
     $plugins = array(
-        // specify enabled plugins here
         new AdminerDumpBz2,
         new AdminerDumpZip,
         new AdminerEditCalendar,
         new AdminerEditForeign,
         new AdminerForeignSystem,
         new AdminerVersionNoverify,
+        // AdminerTheme MUST always be the latest
         new AdminerTheme,
     );
 
