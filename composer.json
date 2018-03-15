@@ -1,7 +1,12 @@
 {
+  "require": {
+    "ext-mongodb": "*"
+  },
   "extra": {
     "paas": {
-      "php": "~7.2"
+      "engines": {
+        "php": "7.2.3"
+      }
     }
   }
 }
