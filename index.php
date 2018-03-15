@@ -10,12 +10,13 @@ function adminer_object() {
 
     $plugins = array(
         // specify enabled plugins here
-        /*new AdminerDumpXml,
-        new AdminerTinymce,
-        new AdminerFileUpload("data/"),
-        new AdminerSlugify,
-        new AdminerTranslation,
-        new AdminerForeignSystem,*/
+        new AdminerDumpBz2,
+        new AdminerDumpZip,
+        new AdminerEditCalendar,
+        new AdminerEditForeign,
+        new AdminerForeignSystem,
+        new AdminerVersionNoverify,
+        new AdminerTheme,
     );
 
     /* It is possible to combine customization and plugins:
