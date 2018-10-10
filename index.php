@@ -14,6 +14,7 @@ function adminer_object() {
       new AdminerEditCalendar,
       new AdminerEditForeign,
       new AdminerForeignSystem,
+      new FasterTablesFilter,
       // TODO: not ready yet
       // new AdminerScalingo,
       new AdminerVersionNoverify,
