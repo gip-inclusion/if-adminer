@@ -6,7 +6,13 @@
     "paas": {
       "engines": {
         "php": "7.x"
-      }
+      },
+      "compile": [
+        "echo $HTPASSWD_CONTENT > config/htpasswd"
+      ],
+      "nginx-includes": [
+        "config/nginx-basic-auth.conf"
+      ]
     }
   }
 }
