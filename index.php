@@ -9,20 +9,20 @@ function adminer_object() {
   }
 
   $plugins = array(
-      new AdminerDumpBz2,
-      new AdminerDumpZip,
-      new AdminerEditCalendar,
-      new AdminerEditForeign,
-      new AdminerForeignSystem,
-      new FasterTablesFilter,
-      new AdminerJsonPreview,
-      new AdminerCollations,
-      new AdminerSimpleMenu,
+      // new AdminerDumpBz2,
+      // new AdminerDumpZip,
+      // new AdminerEditCalendar,
+      // new AdminerEditForeign,
+      // new AdminerForeignSystem,
+      // new FasterTablesFilter,
+      // new AdminerJsonPreview,
+      // new AdminerCollations,
+      // new AdminerSimpleMenu,
       // TODO: not ready yet
       // new AdminerScalingo,
-      new AdminerVersionNoverify,
+      // new AdminerVersionNoverify,
       // AdminerTheme MUST always be the latest
-      new AdminerTheme,
+      // new AdminerTheme,
   );
 
   return new AdminerPlugin($plugins);
