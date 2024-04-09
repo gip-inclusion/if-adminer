@@ -1,4 +1,4 @@
-name: "Deploy master to scalingo"
+name: "Deploy master to scalingo (prod/staging)"
 
 on:
   push:
@@ -6,6 +6,14 @@ on:
       - master
 
 jobs:
+  deploy-staging:
+    uses: gip-inclusion/reusable-github-actions/.github/workflows/deploy-to-scalingo-from-github-targz.yml@main
+    with:
+      appName: ${{ vars.STAGING_APP_NAME }}
+      region: ${{ vars.STAGING_REGION }}
+      targzUrl: ${{ vars.TARGZ_URL }}
+    secrets:
+      SCALINGO_API_TOKEN: ${{ secrets.SCALINGO_API_TOKEN }}
   deploy:
     uses: gip-inclusion/reusable-github-actions/.github/workflows/deploy-to-scalingo-from-github-targz.yml@main
     with:

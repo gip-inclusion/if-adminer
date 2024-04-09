@@ -15,7 +15,7 @@ function adminer_object() {
       // new AdminerEditForeign,
       // new AdminerForeignSystem,
       // new FasterTablesFilter,
-      // new AdminerJsonPreview,
+      new AdminerJsonPreview,
       // new AdminerCollations,
       // new AdminerSimpleMenu,
       // TODO: not ready yet
