@@ -22,7 +22,7 @@ function adminer_object() {
       // new AdminerScalingo,
       // new AdminerVersionNoverify,
       // AdminerTheme MUST always be the latest
-      // new AdminerTheme,
+      new AdminerTheme,
   );
 
   return new AdminerPlugin($plugins);
